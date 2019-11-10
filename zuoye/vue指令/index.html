@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			[v-cloak]{
+				display: none;
+			}
+			.show{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak="">
+			<p v-text="a"></p>
+			<p v-html="b"></p>
+			<button v-on:click="btn">点击</button>
+			<button @click="btn">点击事件 语法糖</button>
+			<p v-bind:class="'show'">属性绑定</p>
+			<div v-show="c" style="width: 100px; height: 100px; background: pink;">v-show</div>
+			<div v-if="c" style="width: 100px; height: 100px; background: blue;">v-if</div>
+			<div v-if="d" style="width: 100px; height: 100px; background: blue;">v-if</div>
+			<div v-else="d" style="width: 100px; height: 100px; background: blue;">v-else</div>
+			<div v-else-if="c" style="width: 100px; height: 100px; background: blue;">v-else-if</div>
+			<input type="text" v-model="a" />
+			<p v-for='(i,$index) in 6'>
+				{{i}}=={{$index}}
+				<span v-pre>{{i}}</span>
+				<span v-once="b">hello</span>
+			</p>
+		</div>
+	</body>
+	<script src="vue.js"></script>
+	<script type="text/javascript">
+		new Vue({
+			el:"#box",
+			data:{
+				a:"<p>innerText 不会解析标签</p>",
+				b:"<p>innerHTML 会解析标签</p>"	,
+				c:true,
+				d:false,
+			},
+			methods:{
+				btn(){
+					alert('1111')
+				}
+			}
+		})
+		
+	</script>
+</html>
