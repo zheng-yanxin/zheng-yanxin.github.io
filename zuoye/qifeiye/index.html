@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+
+			.dh {
+				width: 100%;
+			}
+
+			li {
+				font-size: 20px;
+				color: #fff;
+				line-height: 50px;
+			}
+
+			.a a {
+				color: #fff;
+				display: inline-block;
+				line-height: 50px;
+				width: 40%;
+				text-align: center;
+				font-size: 20px;
+				border: 1px solid rgb(10, 110, 242);
+				border-radius: 30px;
+				margin-right: 20px;
+				margin-top: 20px;
+			}
+
+			.nav>ul>li {
+				float: left;
+				padding: 0 20px;
+				cursor: pointer;
+			}
+
+			.nav>ul>li>a {
+				color: #fff;
+			}
+
+			.nav>ul>li:nth-of-type(1) {
+				border-bottom: 2px solid blue;
+			}
+
+			.nav>ul>li:hover {
+				border-bottom: 2px solid blue;
+			}
+
+			.nav>ul>li:hover a {
+				color: blue;
+			}
+
+			.lc {
+				overflow: hidden;
+				padding: 50px 0 0 100px;
+				margin-bottom: 50px;
+			}
+
+			.box1 {
+				width: 28%;
+				min-height: 220px;
+				background: rgb(27, 90, 158);
+				float: left;
+				margin: 0 2%;
+				/* text-align: center; */
+				font-size: 20px;
+				font-weight: bold;
+				color: #fff;
+				border-radius: 20px;
+			}
+
+			.box1>p {
+				line-height: 50px;
+			}
+
+			.box1>img {
+				margin-top: 50px;
+			}
+
+			.hb {
+				color: #fff;
+				overflow: hidden;
+				margin-bottom: 100px;
+				padding: 0 100px;
+			}
+
+			.hb_l {
+				background: rgb(20, 58, 120);
+				min-height: 600px;
+				border-radius: 20px;
+				float: left;
+				padding-top: 100px;
+				width: 50%;
+				text-align: center;
+			}
+
+			.hb_l span {
+				font-size: 36px;
+				padding: 0 5px;
+			}
+
+			.hb_r {
+				padding-left: 30px;
+				float: left;
+				width: 50%;
+				box-sizing: border-box;
+			}
+
+			.z_about {
+				color: #fff;
+				overflow: hidden;
+				margin-bottom: 100px;
+				margin-top: 100px;
+				padding: 0 100px;
+			}
+
+			.z_about_l {
+				margin-right: 5%;
+			}
+
+			.z_about_l,
+			.z_about_r {
+				background: rgb(20, 58, 120);
+				min-height: 400px;
+				padding-top: 50px;
+				padding-left: 20px;
+				border-radius: 20px;
+				float: left;
+				width: 45%;
+				box-sizing: border-box;
+			}
+
+			.z_about li {
+				font-size: 14px;
+				color: rgb(188, 216, 253);
+				padding-right: 20px;
+				line-height: 30px;
+			}
+
+			[v-cloak] {
+				display: none;
+			}
+
+			h4 {
+				font-size: 30px;
+				color: #fff;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width:100%;background:rgb(12,18,72);overflow: hidden;" v-cloak>
+			<no1></no1>
+			<!-- 导航 -->
+			<div>
+				<div>
+					<div style="width:100%;background:rgb(12,18,72);overflow: hidden;" class="dh">
+						<div style="width:40%;float: left;text-align: center;">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82YzAxZmI3NWMyY2UyNmVkZThiYTA1Y2U3MGEzMDU3Zi5wbmc_p_p100_p_3D.png"
+							 alt="" width="200px" height="50px">
+
+						</div>
+						<div class="nav" style="float: left;width:60%;margin-bottom: 10px;">
+							<ul>
+								<!-- <li v-for="i in arr">{{i}}</li> -->
+								<li><a href="#shouye">首页</a></li>
+								<li><a href="#liucheng">使用流程</a></li>
+								<li><a href="#qq">全球服务</a></li>
+								<li><a href="#all">关于我们</a></li>
+								<li><a href="">专家团队</a></li>
+								<li><a href="">联系我们</a></li>
+								<li><a href="">合作伙伴</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a name="shouye"></a>
+				<div style="width:100%;background:rgb(12,18,72);overflow: hidden;">
+					<div style="width:50%;float: left;padding:40px 110px;box-sizing: border-box;">
+						<h2 style="font-size:50px;color:#fff;margin-bottom: 30px;width:60%;">
+							践行惠普金融助力<span style="color:royalblue">美好生活</span>
+						</h2>
+						<div>
+							<p style="line-height:30px;color:#fff;">
+								我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。
+							</p>
+							<div class="a">
+								<a href="javascript:;">联系我们</a>
+								<a href="javascript:;">点我咨询</a>
+							</div>
+						</div>
+					</div>
+					<div style="float: left;width:50%">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZDUyMmVkNmVhNmIzYjZhYTBiZWM0YzdhMGQyNzE3Mi5wbmc_p_p100_p_3D.png"
+						 alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- 流程 -->
+			<a name="liucheng"></a>
+			<no1 z_title="使用流程" z_text="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站.">
+
+				<div class="lc">
+					<div class="box1">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png"
+						 alt="">
+						<p>创建账户</p>
+
+					</div>
+					<div class="box1">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yNGQ5ZmE0MzI4ZGI1NjEwZTQwODkyZmJhZjQxYTNlNS5wbmc_p_p100_p_3D.png"
+						 alt="">
+						<p>安全保障</p>
+					</div>
+					<div class="box1">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy80ODVmOTZhYTgyYWEzN2E4ODNhYzcxZWMwODEwMDlhZC5wbmc_p_p100_p_3D.png"
+						 alt="">
+						<p>绑定付款</p>
+					</div>
+				</div>
+			</no1>
+			<!--  -->
+			<!-- 货币 -->
+			<div class="hb">
+				<div class="hb_l">
+					<div>
+						<h2 style="margin-bottom: 100px;text-align: center;border-bottom: 5px solid;width:30%;margin-left: 35%;font-weight: normal;font-size: 30px;">
+							近期货币
+							<p style="font-size: 16px;line-height: 40px;">购买进度</p>
+						</h2>
+						<div>
+							<p style="font-size:30px;color:#fff;">
+								<span>00</span>天<span>11</span>时<span>41</span>分钟<span>10</span>秒
+							</p>
+						</div>
+						<div style="padding:50px 100px;">
+							<div style="height:50px;background:#fff;border-radius: 20px;padding:5px;width:100%">
+								<div style="width:80%;height:50px;background:rgb(7,104,238);border-radius: 20px;text-align: center;line-height: 50px;margin-bottom: 50px;">购买进度80%</div>
+								<div class="a">
+									<a href="javascript:;" style="background:royalblue">联系我们</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="hb_r">
+					<h4 style="font-size:40px;color:#fff;margin-top: 100px;font-weight: normal;">最值得信赖的平台</h4>
+					<p style="color:#fff;margin-top: 20px;font-weight: normal;line-height: 30px;padding-right:2%;">移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？</p>
+					<ul style="margin-top: 50px;">
+						<li>享受专属优惠券</li>
+						<li>用于商场消费 先用后付</li>
+						<li>随心付，3/6/9/12期随心付</li>
+					</ul>
+					<div style="margin-top:100px;">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZTA2NTU1NDVjZDY4YmIyNGZlOWVjM2E2YjMzNzhlMS5wbmc_p_p100_p_3D.png"
+						 alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 全球服务 -->
+			<a name="qq"></a>
+			<no1 z_text="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." z_title="全球服务">
+				<div>
+					<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yMTg3ZWYyNmI2MDdiZmZlMDQ1MzgyMTNiNDYxMmRiYy5qcGc_p_p100_p_3D.jpg" />
+				</div>
+			</no1>
+
+			<!-- <no1 >
+				
+			</no1> -->
+
+			<no2 z_text="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." z_title="关于我们"></no2>
+
+		</div>
+		<template id="no1">
+			<div>
+
+				<div style="text-align: center;">
+					<h3 style="font-size:40px;color:#fff;margin-bottom: 20px;">{{title}}</h3>
+					<div style="color:#fff">
+						{{text}}
+					</div>
+					<div>
+						<slot></slot>
+					</div>
+				</div>
+
+			</div>
+		</template>
+		<template id="no2">
+
+			<div>
+				<a name="all"></a>
+				<div style="text-align: center;">
+					<h3 style="font-size:40px;color:#fff;margin-bottom: 20px;">关于我们</h3>
+					<div style="color:#fff">
+						我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。
+					</div>
+					<div>
+						<slot></slot>
+					</div>
+				</div>
+				<div class="z_about">
+					<div class="z_about_l">
+						<div>
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82MmMzM2FhNTI3Y2MxMjIxMWQ2YzRmMjdlYThhOTJkNC1lMTU2Mzk1MDAxNzQzOC5wbmc_p_p100_p_3D.png"
+							 alt="">
+						</div>
+						<div>
+							<h4>税收居民身份须知！</h4>
+							<ul>
+								<li>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+								<li>当今最领先的响应式自助建站平台</li>
+								<li>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+							</ul>
+						</div>
+					</div>
+					<div class="z_about_r">
+						<div>
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy9kOGFjODRhYTVlMzZjZGMyYWRiN2YyY2I1ZjVjMjdlYS5wbmc_p_p100_p_3D.png"
+							 alt="">
+						</div>
+						<div>
+							<h4>移动支付安全小知识！</h4>
+							<ul>
+								<li>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+								<li>当今最领先的响应式自助建站平台</li>
+								<li>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</template>
+
+
+	</body>
+</html>
+<script src="vue.js"></script>
+<script>
+	Vue.component('no1', {
+		template: '#no1',
+		props: ['z_title', 'z_text', ],
+		data() {
+			return {
+				title: this.z_title,
+				text: this.z_text,
+
+			}
+		}
+	})
+
+	Vue.component('no2', {
+		template: "#no2",
+
+	})
+	new Vue({
+		el: '#box',
+		data: {
+			arr: ['首页', '使用流程', '全球服务', '关于我们', '专家团队', '联系我们', '合作伙伴']
+		}
+	})
+</script>
+<script>
+	var oNav = document.querySelector('.dh');
+	// var oDiv=document.querySelector('.box');
+	var JD = oNav.offsetTop;
+	onscroll = function() {
+		var oGD = document.documentElement.scrollTop || document.body.scrollTop;
+
+		if (oGD > JD) {
+			oNav.style.cssText = 'position:fixed;top:0;left:50px;background-color: rgba(12,18,72,.7);'
+			oDiv.style.display = 'block'
+		} else {
+			oNav.style.position = 'static';
+			oDiv.style.display = 'none'
+		}
+
+
+	}
+</script>
