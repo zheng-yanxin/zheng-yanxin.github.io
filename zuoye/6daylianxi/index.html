@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="box" v-cloak="">
+			<!--nav-->
+			<div style="width:100%;" class="dh">
+				<div class="nav clearfix">
+					<!--log-->
+					<div class="log">
+						<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzM0MDdjY2U4MDk5MTljNjZhZmNjZDYxMWJkNTIxZDkucG5n.png"
+						 alt="" />
+					</div>
+					<!--导航-->
+					<ul class="navul">
+						<li>
+							<a href="#/"></a>
+						</li>
+						<li>
+							<a href="#/no1">首页</a>
+						</li>
+						<li>
+							<a href="#/about">关于</a>
+						</li>
+						<li>
+							<a href="#/luxian">路线</a>
+						</li>
+						<li>
+							<a href="#/gonglve">攻略</a>
+						</li>
+						<li>
+							<a href="#/touch">联系</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZGE4MWFlMzI1NjNiMWNhM2M1NjJlNGYyYjBmYjU5ZDEtMjN4MTUucG5n.png" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<router-view></router-view>
+			<div class="footer">
+				<div class="footerTop clearfix">
+					<div class="ftLeft">
+						<h3>TRAVEL</h3>
+						<p>我公司会以安全、快乐、环保为理念，以敬业、诚信、善良为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</p>
+					</div>
+					<div class="ftLeft">
+						<h3>CONTACT</h3>
+						<div class="ftLeftDz">
+							<p><span>-</span>&nbsp;&nbsp;&nbsp;深圳市南京路双港码头6楼</p>
+							<p><span>-</span>&nbsp;&nbsp;&nbsp;123@admin.com</p>
+							<p><span>-</span>&nbsp;&nbsp;&nbsp;011-555-12345</p>
+						</div>
+						<p></p>
+					</div>
+					<div class="ftLeft">
+						<div class="ftLeftimg">
+							<img src="img/1.jpg" alt="" />
+							<img src="img/2.jpg" alt="" />
+							<img src="img/3.jpg" alt="" />
+							<img src="img/4.jpg" alt="" />
+						</div>
+						<p>强大专业的户外产品汇集平台，为您提供徒步、登山、露营、摄影、航海、越野等多种方式探索大自然。</p>
+					</div>
+				</div>
+
+				<div class="footerBtm">
+					<p>Copyright © 2019 户外探险模板 All rights reserved</p>
+				</div>
+			</div>
+
+		</div>
+
+		<template id="bannerText">
+			<div class="c_bnertxt">
+				<h3>{{a}}</h3>
+				<p>{{b}}</p>
+			</div>
+		</template>
+		<template id="morenshouye">
+			<!--默认主页-->
+			<div class="box1">
+				<abc></abc>
+				<!--content1-->
+				<div class="content1 clearfix">
+					<div class="cont1_left">
+						<p class="cont1_p1">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+							还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+						<p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可完成自己的网站，这一切都是免费的。</p>
+					</div>
+					<div class="swiper-container cont1_right">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="cont1C1">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDIzODAyNGRmMjA3MzZhODU4MWUxYzk3ZTViY2Y0ZDMuanBn.jpg"
+									 alt="" />
+								</div>
+								<div class="cont1C2">
+									<h4>推荐导游</h4>
+									<span>Lean</span>
+									<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide">
+									<div class="cont1C1">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNDkzMGJiZmU2NzM2ZjA2NzAyOTI1N2UwYjBhNGUxYzUuanBn.jpg"
+										 alt="" />
+									</div>
+									<div class="cont1C2">
+										<h4>推荐导游</h4>
+										<span>Elliot</span>
+										<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide">
+									<div class="cont1C1">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNDkzMGJiZmU2NzM2ZjA2NzAyOTI1N2UwYjBhNGUxYzUuanBn.jpg"
+										 alt="" />
+									</div>
+									<div class="cont1C2">
+										<h4>推荐导游</h4>
+										<span>Elliot</span>
+										<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination">
+
+						</div>
+					</div>
+
+				</div>
+				<div class="content2">
+
+				</div>
+			</div>
+		</template>
+		<!--banner-->
+		<template id="aaa">
+			<div class="banner">
+				<div class="bannerimg">
+					<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg"
+					 alt="" />
+				</div>
+				<div class="bnerText">
+					<router-view></router-view>
+				</div>
+			</div>
+		</template>
+
+		<!--首页-->
+		<template id="no1">
+			<div class="shouyebtn">
+				<div class="sy_banner">
+					<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNzdiZjlhODA2NWZhYjQ0ZDFhMDUxOTRkYTlhNjU3ODguanBn.jpg"
+					 alt="" />
+					<div class="sy_bannerP">
+						<div class="sy_top clearfix">
+							<div class="sy_tleft">
+								<h2>探索<br />山野秘境<br />发现纯粹自我</h2>
+							</div>
+							<div class="sy_tright">
+								<div class="sy_hb">
+									<p class="sy_hbp1">海拔</p>
+									<p class="sy_hbp2">1650m</p>
+								</div>
+								<div class="sy_lx">
+									<p class="sy_lxp1">路线</p>
+									<p class="sy_lxp2">7</p>
+								</div>
+								<div class="sy_yk">
+									<p class="sy_ykp1">游客/年</p>
+									<p class="sy_ykp2">3000+</p>
+								</div>
+							</div>
+						</div>
+						<div class="sy_btm clearfix">
+							<div class="sy_bleft">
+								<p>背着背包的路上，听过许多故事，见过旅行风景。<br /> 流转的时光，都成为命途中的点缀，
+									<br /> 不言不语都是好风景。
+								</p>
+							</div>
+							<div class="sy_bright clearfix" style="color: white;">
+								<div class="swiper-container sy_brightswiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+											 alt="" />
+										</div>
+										<div class="swiper-slide">
+											<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+											 alt="" />
+										</div>
+										<div class="swiper-slide">
+											<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg"
+											 alt="" />
+										</div>
+										<div class="swiper-slide">
+											<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+											 alt="" />
+										</div>
+										<div class="swiper-slide">
+											<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvY2Q4MzQ3OWU2ZmQ3M2Y4NThlMjE2MWZmNGJlOWJiYmQtMTMwMHg1NTQuanBn.jpg"
+											 alt="" />
+										</div>
+									</div>
+									<!-- Add Arrows -->
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<!-- 关于 -->
+		<template id="about">
+			<div id="about">
+				<div class="a_banner">
+					<!-- <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg" alt="" /> -->
+					<template id="bannerText">
+						<div class="c_bnertxt">
+							<h3>{{a}}</h3>
+							<p>{{b}}</p>
+						</div>
+					</template>
+
+				</div>
+				<div class="a_cont clearfix">
+					<div class="a_cont_l">
+						<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+							还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
+						<p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可完成自己的网站，起飞页用户的最短建站时间纪录为30分钟。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…</p>
+					</div>
+					<div class="a_cont_r">
+						<div class="a_bright clearfix" style="color: white;">
+							<div class="swiper-container a_brightswiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide a_li">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+										 alt="" />
+									</div>
+									<div class="swiper-slide a_li">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+										 alt="" />
+									</div>
+									<div class="swiper-slide a_li">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg"
+										 alt="" />
+									</div>
+									<div class="swiper-slide a_li">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+										 alt="" />
+									</div>
+									<div class="swiper-slide a_li">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvY2Q4MzQ3OWU2ZmQ3M2Y4NThlMjE2MWZmNGJlOWJiYmQtMTMwMHg1NTQuanBn.jpg"
+										 alt="" />
+									</div>
+								</div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="a_cont1 clearfix">
+					<div class="a_cont1_l">
+						<div>
+							<h4>SERVICE</h4>
+							<p>多种探险类型可供选择</p>
+						</div>
+						<p>偶尔为街头独特的风景驻足，偶尔因高山流水的美丽停留，偶尔被惊鸿一瞥的美丽吸引；或者在春暖花开时，或者在河边放下一盏写着心愿的河灯，祝愿一切安好。</p>
+					</div>
+					<div class="a_cont1_r">
+						<div>
+							<ul>
+								<li>
+									<template id="bbb">
+										<div class="box2">
+											<div class="box2_img">
+												<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNjAweDMwMC5qcGc_p_p100_p_3D.jpg"
+												 alt="">
+											</div>
+											<h6>高原徒步</h6>
+											<p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可...</p>
+										</div>
+									</template>
+								</li>
+								<li>
+									<template id="bbb">
+										<div class="box2">
+											<div class="box2_img">
+												<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNTAweDMzMC5qcGc_p_p100_p_3D.jpg"
+												 alt="">
+											</div>
+											<h6>高原徒步</h6>
+											<p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可...</p>
+										</div>
+									</template>
+								</li>
+								<li>
+									<template id="bbb">
+										<div class="box2">
+											<div class="box2_img">
+												<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNTAweDMzMC5qcGc_p_p100_p_3D.jpg"
+												 alt="">
+											</div>
+											<h6>高原徒步</h6>
+											<p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可...</p>
+										</div>
+									</template>
+								</li>
+								<li>
+
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</template>
+
+		<!-- 路线 -->
+		<template id="luxian">
+			<div id="luxian">
+				<div class="l_banner">
+					<!-- <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg" alt="" /> -->
+					<template id="bannerText">
+						<div class="c_bnertxt">
+							<h3>{{a}}</h3>
+							<p>{{b}}</p>
+						</div>
+					</template>
+
+				</div>
+				<div class="l_cont clearfix">
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNTAweDMzMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>织金大峡谷</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>青龙洞</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>乌兰布统草原</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>格凸河</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>玉龙沙湖</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+					<div>
+						<template id="ccc">
+							<div class="l_box2">
+								<div class="l_box2_img">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctODAweDUwMC5qcGc_p_p100_p_3D.jpg"
+									 alt="">
+								</div>
+								<h6>梵净山</h6>
+								<span>Distance:8.5km　　Days:7</span>
+								<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+							</div>
+						</template>
+					</div>
+				</div>
+			</div>
+		</template>
+
+		<!-- 攻略 -->
+		<template id="gonglve">
+			<div id="gonglve">
+				<div class="l_banner">
+					<!-- <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg" alt="" /> -->
+					<template id="bannerText">
+						<div class="c_bnertxt">
+							<h3>{{a}}</h3>
+							<p>{{b}}</p>
+						</div>
+					</template>
+
+				</div>
+				<div class="g_cont clearfix">
+					<div class="g_cont_l">
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>行走在天堂的边缘</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNDliZDY4MzkwZDM5ZmIzNDFlZmQ4MzM4Y2Y4ZjZlOGUtMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>鳌太也可以奢游</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZTAxNzFhNmU1ZWVhYjYwNDNjNmRkM2M1YTdjOGE5OTAtMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>太白南北重装行</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>登梅里雪山冰湖</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>徒步晋东南,自虐变休闲</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+						<div class="clearfix" style="margin-bottom: 20px;">
+							<div class="ll" style="width:25%;height: 100%;float: left;">
+								<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItMjAweDI2MC5qcGc_p_p100_p_3D.jpg"
+								 alt="">
+							</div>
+							<div style="width:75%;height: 100%;float: left;padding: 40px;box-sizing: border-box;">
+								<h4>隧道奇迹欧米伽</h4>
+								<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+								<p style="line-height: 25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，
+									还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="g_cont_r" style="padding:20px;box-sizing: border-box;">
+						<div>
+							<input type="text" placeholder="搜索" style="width:100%;border-radius: 10px;line-height: 40px;">
+						</div>
+						<div>
+							<h3 style="line-height: 50px;">NOTES</h3>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMjNkNGQ0MTljOTQ3NTlkYmFkZDhjZGU0MGZiOThkYWQtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNDliZDY4MzkwZDM5ZmIzNDFlZmQ4MzM4Y2Y4ZjZlOGUtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3 style="line-height: 50px;">RECOMM</h3>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMjNkNGQ0MTljOTQ3NTlkYmFkZDhjZGU0MGZiOThkYWQtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNDliZDY4MzkwZDM5ZmIzNDFlZmQ4MzM4Y2Y4ZjZlOGUtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+							<div class="clearfix" style="margin-bottom: 20px;">
+								<div class="ll" style="width:25%;height: 100%;float: left;">
+									<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMDE4MTAxMDA0MmE4MTM0ZTE1M2U0YzU4MjBhYmQwOTItNjB4NjAuanBn.jpg"
+									 alt="">
+								</div>
+								<div style="width:75%;height: 100%;float: left;padding: 0px;box-sizing: border-box;">
+									<h4>隧道奇迹欧米伽</h4>
+									<span style="color:blue;line-height: 30px;">发布日期：2019-04-01</span>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+
+		<!-- 联系 -->
+		<template id="touch">
+			<div id="touch">
+				<div class="l_banner">
+					<!-- <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOWVmNGI2ZWIxMDQ0NTIyY2ZkNDQ5NGE3YzgwNmMyYjQuanBn.jpg" alt="" /> -->
+					<template id="bannerText">
+						<div class="c_bnertxt">
+							<h3>{{a}}</h3>
+							<p>{{b}}</p>
+						</div>
+					</template>
+
+				</div>
+
+				<div id="t_map" style="height:400px;background:blue"></div>
+			</div>
+		</template>
+
+
+
+		<template id="bbb">
+			<div class="box2">
+				<div class="box2_img">
+					<img :src="imgurl" alt="">
+				</div>
+				<h6>{{h6}}</h6>
+				<p>{{p}}</p>
+			</div>
+		</template>
+		<template id="ccc">
+			<div class="box2">
+				<div class="box2_img">
+					<img :src="imgurl" alt="">
+				</div>
+				<h6>{{h6}}</h6>
+				<span>{{bb}}</span>
+				<p>{{p}}</p>
+			</div>
+		</template>
+		<!-- <template id="ddd">
+			<div class="box2">
+				<div class="box2_img">
+					<img :src="imgurl" alt="">
+				</div>
+				<h6>{{h6}}</h6>
+				<span>{{bb}}</span>
+				<p>{{p}}</p>
+			</div>
+		</template> -->
+
+	</body>
+	<script src="vue.js"></script>
+	<script src="vue-router.js"></script>
+	<script src="swiper.min.js"></script>
+
+	<script src="https://webapi.amap.com/maps?v=1.4.13&key=831dd408f9570de24dc29e27976b196b"></script>
+	<script type="text/javascript">
+		 var map = new AMap.Map('t_map', {
+		         zoom:11,//级别
+		         center: [116.397428, 39.90923],//中心点坐标
+		         viewMode:'3D'//使用3D视图
+		        });
+	</script>
+	<script type="text/javascript">
+		var router = new VueRouter({
+			routes: [{
+					path: '/',
+					component: {
+						template: '#morenshouye',
+						data() {
+							return {
+								a: '青龙洞',
+								b: '背上行囊去远方，那个梦寐以求的目的地'
+							}
+						}
+					},
+					// children: [{
+					// 	path: 'type',
+					// 	component: {
+					// 		template: '#bannerText',
+					// 	}
+					// }]
+				},
+				{
+					path: '/no1',
+					component: {
+						template: '#no1',
+					}
+				}, {
+					path: '/about',
+					component: {
+						template: '#about',
+						data() {
+							return {
+								a: 'ABOUT US',
+								b: '背上行囊去远方，那个梦寐以求的目的地'
+							}
+						}
+					}
+				}, {
+					path: '/luxian',
+					component: {
+						template: '#luxian',
+						data() {
+							return {
+								a: 'DESTINATION',
+								b: '背上行囊去远方，那个梦寐以求的目的地'
+							}
+						}
+					}
+				}, {
+					path: '/gonglve',
+					component: {
+						template: '#gonglve',
+						data() {
+							return {
+								a: 'TRAVEL GUIDE',
+								b: '背上行囊去远方，那个梦寐以求的目的地'
+							}
+						}
+					}
+				}, {
+					path: '/touch',
+					component: {
+						template: '#touch',
+						data() {
+							return {
+								a: 'CONTACT',
+								b: '背上行囊去远方，那个梦寐以求的目的地'
+							}
+						}
+					}
+				}
+			]
+		})
+		Vue.component('abc', {
+			template: '#aaa',
+			//			props:['str'],
+			data() {
+				return {
+					nums: 'aaaa'
+				}
+			}
+		})
+		Vue.component('bbb', {
+			template: '#bbb',
+			props: ['a_img', 'a_h6', 'a_p'],
+			data() {
+				return {
+					imgurl: this.a_img,
+					h6: this.a_h6,
+					p: this.a_p
+				}
+			}
+		})
+		Vue.component('ccc', {
+			template: '#ccc',
+			props: ['l_img', 'l_h6', 'l_p', 'l_blue'],
+			data() {
+				return {
+					imgurl: this.a_img,
+					h6: this.a_h6,
+					p: this.a_p,
+					bb: this.l_blue
+				}
+			}
+		})
+
+		Vue.component('ddd', {
+			template: '#ddd',
+			props: ['g_img', 'g_h6', 'g_p', 'g_blue'],
+			data() {
+				return {
+					imgurl: this.g_img,
+					h6: this.g_h6,
+					p: this.g_p,
+					bb: this.g_blue
+				}
+			}
+		})
+
+		new Vue({
+			el: "#box",
+			router,
+			data: {}
+		})
+		//		默认首页轮播图
+		var mySwiper = new Swiper('.cont1_right', {
+			//			direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		})
+		//		首页轮播图
+		var swiper = new Swiper('.sy_brightswiper', {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			slidesPerGroup: 1,
+			simulateTouch: false, //禁止鼠标模拟
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		//		关于轮播图
+		var swiper = new Swiper('.a_brightswiper', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			slidesPerGroup: 1,
+			simulateTouch: false, //禁止鼠标模拟
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+</html>
+
+
+
+<!-- <script>
+		var oNav = document.querySelector('.dh');
+		var JD = oNav.offsetTop;
+		onscroll = function() {
+			var oGD = document.documentElement.scrollTop || document.body.scrollTop;
+		
+			if (oGD > JD) {
+				oNav.style.cssText = 'position:fixed;top:0;left:0;background-color: #0062CC;'
+			} else {
+				oNav.style.position = 'static';
+			}
+		
+		
+		}
+</script> -->
